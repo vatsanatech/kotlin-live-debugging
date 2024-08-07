@@ -4,8 +4,8 @@ package com.stage.kotlin.interview.data
 import retrofit2.Call
 import retrofit2.http.GET
 
-data class Post(val userId: Int, val id: Int, val title: String, val body: String)
-data class Comment(val postId: Int, val id: Int, val name: String, val email: String, val body: String)
+data class Post(val userId: Int, val id: Int, val title: Int, val body: String)
+data class Comment(val postId: Int, val id: String, val name: String, val email: Int, val body: String)
 
 interface ApiService {
     @GET("posts")
