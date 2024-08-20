@@ -4,8 +4,16 @@ package com.stage.kotlin.interview.data
 import retrofit2.Call
 import retrofit2.http.GET
 
-data class Post(val userId: Int, val id: Int, val title: Int, val body: String)
-data class Comment(val postId: Int, val id: String, val name: String, val email: Int, val body: String)
+data class Post(val userId: Int, val id: Int, val title: String, val body: String)
+data class Comment(val postId: Int, val id: Int, val name: String, val email: String, val body: String)
+data class Photo(
+    val albumId: Int,
+    val id: Int,
+    val title: String,
+    val url: String,
+    val thumbnailUrl: String
+)
+
 
 interface ApiService {
     @GET("posts")
@@ -13,7 +21,6 @@ interface ApiService {
 
     @GET("comments")
     fun getComments(): Call<List<Comment>>
-
-    @GET("path/to/csv")
-    fun getCSV(): Call<String>
+    @GET("photos")
+    fun getPhotos():Call<List<Photo>>
 }
