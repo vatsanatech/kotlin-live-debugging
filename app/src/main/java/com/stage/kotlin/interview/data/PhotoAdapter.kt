@@ -19,7 +19,7 @@ class PhotoAdapter(private val photos: List<Photo>) : RecyclerView.Adapter<Photo
     override fun onBindViewHolder(holder: PhotoViewHolder, position: Int) {
         val photo = photos[position]
         holder.title.text = photo.title
-        Picasso.get().load(photo.thumbnailUrl).into(holder.thumbnail)
+        Picasso.get().load(photo.thumbnailUrl.replace("https://","")).into(holder.thumbnail)
     }
 
     override fun getItemCount(): Int {

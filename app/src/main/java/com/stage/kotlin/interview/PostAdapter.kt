@@ -21,7 +21,7 @@ class PostAdapter(private val posts: List<Post>) : RecyclerView.Adapter<PostAdap
     override fun onBindViewHolder(holder: PostViewHolder, position: Int) {
         val post = posts[position]
         holder.title.text = post.title.toString()
-        holder.body.text = post.body
+        holder.body.text = post.body.toString()
     }
 
     override fun getItemCount(): Int {
@@ -44,7 +44,7 @@ class CommentAdapter(private val comments: List<Comment>) : RecyclerView.Adapter
 
     override fun onBindViewHolder(holder: CommentViewHolder, position: Int) {
         val comment = comments[position]
-        holder.name.text = comment.name
+        holder.name.text = comment.name.toString()
         holder.email.text = comment.email.toString()
         holder.body.text = comment.body
     }
