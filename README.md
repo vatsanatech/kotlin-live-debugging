@@ -1,42 +1,50 @@
-Live Debugging Assignment for Kotlin Interview
-Objective
-The goal of this assignment is to evaluate your debugging skills in a Kotlin-based Android application. The app has three RecyclerView lists meant to display data fetched from an API, but currently, none of the lists are showing data.
+***Kotlin Android Project - Live Debugging Assignment*** 
 
-Your task is to identify and fix the issue to make sure the data is displayed correctly.
+This project contains a Kotlin-based Android application designed for a live debugging assignment. The app includes three RecyclerView lists intended to display data fetched from a remote API. However, none of the lists are currently showing data due to an existing issue.
 
-Project Overview
-The project includes:
+***Objective*** 
 
-Comments List: Displays a list of comments.
-Posts List: Displays a list of posts.
-Photos List: Displays a list of photos.
-Each list is implemented using a RecyclerView.
+Your task is to identify and fix the issue to ensure the data is properly displayed in each RecyclerView.
 
-Steps
-Clone the Project:
+***Project Overview*** 
+The project includes the following features: 
 
-Clone the repository from GitHub and open it in Android Studio.
-Run the App:
+***Comments List***: Displays a list of comments. 
+***Posts List***: Displays a list of posts. 
+***Photos List**: Displays a list of photos. 
+Each list is implemented using a RecyclerView. 
 
-Run the app on an emulator or physical device.
-Observe that the lists are not displaying any data.
-Debug the Issue:
+***Steps to Complete the Assignment***
+Clone the Project: 
 
-Use Android Studio's debugging tools (Logcat, breakpoints, etc.) to figure out why the data is not showing.
-Check the network calls, adapters, and layouts.
-Fix the Problem:
+Clone this repository to your local machine. 
+Open the project in Android Studio. 
+bash 
+Copy code 
+git clone https://github.com/your-username/your-repo-name.git
+Run the App: 
 
-Implement the necessary changes to ensure data is correctly fetched and displayed in each RecyclerView.
-Explain Your Fix:
+Run the app on an Android emulator or a physical device. 
+Observe that the lists are not displaying any data. 
+***Debug the Issue***: 
 
-Be prepared to explain how you identified and resolved the issue during the interview.
+Use Android Studio’s debugging tools (e.g., Logcat, breakpoints) to identify why the data is not being displayed. 
+Check the network calls, adapters, and layouts to diagnose the problem.  
+
+***Fix the Problem*** : 
+
+Implement the necessary changes to ensure data is fetched and displayed correctly in each RecyclerView. 
+Explain Your Fix: 
+
+Be prepared to explain how you identified and resolved the issue during the interview. 
 Tips
-Check Permissions: Ensure the app has internet access.
-Use Logging: Log messages can help you track down where things go wrong.
-Inspect API Responses: Make sure the API is returning the expected data.
-Evaluation Criteria
-Problem-Solving: How quickly and effectively you can identify and fix the issue.
-Debugging: Your ability to use debugging tools to diagnose the problem.
-Communication: How well you explain your process and solution.
-Time
-You will have [insert time duration] to complete this assignment during the interview.
+Check Permissions: Ensure the app has the required internet permission in AndroidManifest.xml. 
+Use Logging: Add log statements to track the flow of data and identify where the issue might be occurring. 
+Inspect API Responses: Verify that the API is returning the expected data. 
+Evaluation Criteria 
+Problem-Solving: Ability to quickly and effectively identify and fix the issue. 
+Debugging: Proficiency in using debugging tools to diagnose and resolve the problem. 
+Communication: Clarity in explaining your process and the solution. 
+Time Allocation 
+You will have 15 mins to complete this assignment during the interview. 
+
